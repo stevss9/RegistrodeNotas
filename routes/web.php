@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /* Roles */
 Route::group(['middleware' => ['role:admin']], function () {
-    Route::resource('alumno', AlumnoController::class);
+    Route::resource('alumnos', AlumnoController::class);
     Route::resource('profesor', ProfesorController::class);
     Route::resource('notas', NotasController::class);
     Route::resource('curso', CursoController::class);
@@ -36,6 +36,7 @@ Route::group(['middleware' => ['role:profesor']], function () {
 
     Route::resource('notasp', ProfesorNotController::class);
     Route::resource('cursop', ProfesorCurController::class);
+});
 
 Route::group(['middleware' => ['role:alumno']], function () {
 

@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+/* Roles */
 Route::group(['middleware' => ['role:admin']], function () {
     Route::resource('alumnos', AlumnoController::class);
     Route::resource('profesor', ProfesorController::class);

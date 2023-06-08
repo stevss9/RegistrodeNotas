@@ -22,7 +22,7 @@
     <table width="100%" id="myTable" class="display">
         <thead>
             <tr>
-                <th>ID</th>
+                <!--<th>ID</th>-->
                 <th>Nombre</th>
                 <th>Año</th>
                 <th>Ciclo</th>
@@ -36,7 +36,7 @@
             @foreach ($cursos as $curso)
                 @if ($curso->idprofesor == @Auth::user()->idprofesor)
                     <tr>
-                        <td>{{ $curso->idcursos }}</td>
+                        <!--<td>{{ $curso->idcursos }}</td>-->
                         <td>{{ $curso->nombrecurso }}</td>
                         <td>{{ $curso->año }}</td>
                         <td>{{ $curso->ciclo }}</td>

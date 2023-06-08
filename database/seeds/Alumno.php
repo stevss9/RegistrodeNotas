@@ -47,7 +47,7 @@ class Alumno extends Seeder
         $datos = [
         'nombre' => 'Mercy',
         'apellido' => 'Arrobo',
-        'fechanacimiento' => '2000-09-07',
+        'fechanacimiento' => '2000-10-13',
         'direccion' => 'Santo Domingo',
         'genero' => 'F',
         'telefono' => random_int(1000000, 999999999),
@@ -58,22 +58,22 @@ class Alumno extends Seeder
         $datos1 = [
             'nombre' => 'Fernando',
             'apellido' => 'Masache',
-            'fechanacimiento' => '2000-09-07',
+            'fechanacimiento' => '1999-12-31',
             'direccion' => 'Santo Domingo',
             'genero' => 'M',
             'telefono' => random_int(1000000, 999999999),
-            'correo' => 'fmasache@espe.edu.ec',
+            'correo' => 'fjmasache@espe.edu.ec',
             'clave' =>  bcrypt('12345678'),
         ];
 
         $datos2 = [
             'nombre' => 'Noelia',
             'apellido' => 'Anchundia',
-            'fechanacimiento' => '2000-09-07',
+            'fechanacimiento' => '2000-04-19',
             'direccion' => 'Santo Domingo',
             'genero' => 'F',
             'telefono' => random_int(1000000, 999999999),
-            'correo' => 'nanchundia@espe.edu.ec',
+            'correo' => 'vnanchundia@espe.edu.ec',
             'clave' =>  bcrypt('12345678'),
         ];
 
@@ -89,17 +89,17 @@ class Alumno extends Seeder
 
         $user1 = User::create([
             'name' => 'Fernando Masache',
-            'email' => 'fmasache@espe.edu.ec',
+            'email' => 'fjmasache@espe.edu.ec',
             'password' => bcrypt('12345678'),
-            'idalumno' => '1'
+            'idalumno' => '2'
         ]);
         $user1->assignRole('alumno');
 
         $user2 = User::create([
             'name' => 'Noelia Anchundia',
-            'email' => 'nanchundia@espe.edu.ec',
+            'email' => 'vnanchundia@espe.edu.ec',
             'password' => bcrypt('12345678'),
-            'idalumno' => '1'
+            'idalumno' => '3'
         ]);
         $user2->assignRole('alumno');
 

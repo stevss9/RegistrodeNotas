@@ -24,5 +24,21 @@ class CursosSeeder extends Seeder
             'idprofesor' => '1',
 
         ]);
+
+        DB::table('cursos')->insert([
+            'nombrecurso' => 'Aplicaciones Web',
+            'año' => '2023',
+            'ciclo' => '202350',
+            'idprofesor' => '1',
+
+        ]);
+
+        DB::table('cursos')->insert([
+            'nombrecurso' => 'Aplicaciones Distribuidas',
+            'año' => '2023',
+            'ciclo' => '202350',
+            'idprofesor' => '1',
+
+        ]);
     }
 }

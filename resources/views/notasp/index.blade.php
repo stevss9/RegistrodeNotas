@@ -17,7 +17,7 @@
     <table width="100%" id="myTable" class="display">
         <thead>
             <tr>
-                <th>ID</th>
+                <!--<th>ID</th>-->
                 <th>Alumno</th>
                 <th>Curso</th>
                 <th>Nota 1</th>
@@ -34,7 +34,7 @@
             @foreach ($notasp as $nota)
                 @if ($nota->idprofesor == @Auth::user()->idprofesor)
                     <tr>
-                        <td>{{ $nota->idnota }}</td>
+                        <!--<td>{{ $nota->idnota }}</td>-->
                         <td>{{ $nota->alumno->nombre }} {{ $nota->alumno->apellido }}</td>
                         <td>{{ $nota->curso->nombrecurso }}</td>
                         <td>{{ $nota->nota1 }}</td>

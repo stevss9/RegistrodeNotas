@@ -21,6 +21,7 @@
             integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/css/styles.css">
+        
         <style>
             @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 

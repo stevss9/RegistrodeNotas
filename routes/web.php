@@ -36,13 +36,9 @@ Route::group(['middleware' => ['role:profesor']], function () {
 
     Route::resource('notasp', ProfesorNotController::class);
     Route::resource('cursop', ProfesorCurController::class);
-
 });
 
 Route::group(['middleware' => ['role:alumno']], function () {
 
     Route::resource('notasa', AlumnoNotController::class);
-   
-
 });
-

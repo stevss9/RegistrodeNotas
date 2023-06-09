@@ -139,6 +139,8 @@ class AlumnoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     //Destroy
     public function destroy($id)
     {
         Alumnos::findOrFail($id)->delete();
